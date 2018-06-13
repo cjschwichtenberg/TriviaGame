@@ -1,0 +1,136 @@
+.jumbotron {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    background-image: url(https://c1.staticflickr.com/8/7551/15938866299_9f5376e4e0_b.jpg);
+    max-width: 100%;
+    height: 683px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbo-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+}
+
+#jumbo-lead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#time-text {
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+}
+
+#start-button {
+    font-family: 'Gruppo', cursive;
+}
+
+#submit1, #submit2, #submit3, #submit4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gruppo', cursive;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#counter {
+    color: white;
+    font-family: 'Gruppo', cursive;
+    font-size: 24px;
+}
+.container {
+    background: black;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.question-container {
+    background-color: black;
+    flex: 0 0 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-container {
+    display: none;
+    flex: 00 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    margin: 15px;
+    
+}
+
+.card-img-top {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.form {
+    background-color: black;
+    color:white;
+    font-family: 'Gruppo', cursive;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+}
+
+.display-4 {    
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+p.lead {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Gruppo', cursive;
+    height: 165px;
+}
+
+
+
+
+/* flex-direction: column;
+order:2;
+
+}
+
+#i1-container {
+    display: flex;
+    order: 2;
+}
+
+*/
+
+
+/* .card { */
+
+
+/* display: none; */
+
+
+/* $('#question1').prop("display", "none");
+            $('#question2').prop("display", "none");
+            $('#question3').prop("display", "none");
+
+            $('#info1').prop("display", "none");
+            $('#info2').prop("display", "none");
+            $('#info3').prop("display", "none"); */

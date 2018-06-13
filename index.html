@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Totally Trivia: RVA EDITION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="jumbo-container">
+        <div class="jumbotron">
+            <span><h1 class="display-4" id="jumbo-heading">Totally Trivia:</h1>
+            <h2 class="lead" id="jumbo-lead">&ensp;RVA HISTORY EDITION</h2>
+            <hr class="my-4 bg-light" id="jumbo-hr">
+            <p id="time-text">You have 40 seconds to answer all questions!</p>
+            <br>
+            <a class="btn btn-light btn-lg" id="start-button" href="#" role="button">Start</a>
+            <br>
+            <p id="counter"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container bg-dark">
+
+        <div class="question-container" id="q1-container">
+            <div class="card" id="question1">
+                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Theatrical_District%2C_Richmond%2C_Virginia%2C_1923.jpg">
+                <div class="card-header">
+                    <h1 class="display-4">Question One:</h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead">In 1887-1888, Richmond began running the first <i>successful and practical</i> citywide electric-powered streetcar stystem powered by overhead wires in the US. The new technology used to operate the <i>Richmond Union Passenger Railway</i>became
+                        widely adopted around the world for subsequently built trolley systems. Who invented the overhead trolley wire system?</p>
+                </div>
+                <div class="card-body">
+                    <form class="form" id="question-form1">
+                        <div class="answer">
+                            <input name="radio1" type="radio" id="input-radio1" value="Edison" defaultChecked="false">
+                            <label for="input-radio1" class="answer-option">Edison</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio1" type="radio" id="input-radio2" value="Sprague" defaultChecked="false">
+                            <label for="input-radio2" class="answer-option">Sprague</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio1" type="radio" id="input-radio3" value="Tesla" defaultChecked="false">
+                            <label for="input-radio3" class="answer-option">Tesla</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container" id="i1-container">
+            <div class="card" id="info1">
+                <div class="card-header">
+                    <h1 class="display-4" id="wrong-correct1"></h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead" id="more-info"> The rails used for the Richmond Union Passenger Railway can still be found in areas around RVA, and many native Richmonders want to reinstate a modern trolley system.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container" id="q2-container">
+            <div class="card" id="question2">
+                <img class="card-img-top" src="http://members.tripod.com/~g_cowardin/byrd/byrd_in.jpg">
+                <div class="card-header">
+                    <h1 class="display-4">Question Two:</h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead">Which RVA historical landmark, built in 1928, has one of the <i>only</i> operating <strong>Wurlitzer</strong> organs still oprating? </h5>
+                </div>
+                <div class="card-body">
+                    <form class="form" id="question-form2">
+                        <div class="answer">
+                            <input name="radio2" type="radio" id="input-radio4" value="The National" defaultChecked="false">
+                            <label for="input-radio4" class="answer-option">The National</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio2" type="radio" id="input-radio5" value="Grace Street Theater" defaultChecked="false">
+                            <label for="input-radio5" class="answer-option">Grace Street Theater</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio2" type="radio" id="input-radio6" value="Byrd Theater" defaultChecked="false">
+                            <label for="input-radio6" class="answer-option">Byrd Theater</label>
+                        </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container" id="i2-container">
+            <div class="card" id="info2">
+                <div class="card-header">
+                    <h1 class="display-4" id="wrong-correct2"></h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead" id="more-info"> You can hear the Wurlitzer in person every Saturday night for only one dollar!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container" id="q3-container">
+            <div class="card" id="question3">
+                <img class="card-img-top" src="https://news.vcu.edu/image/7214/620">
+                <div class="card-header">
+                    <h1 class="display-4">Question Three:</h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead">There is a saying about Richmond, that just like Rome, it is a city built on seven hills. A 1937 city ordinance states the original seven hills of RVA and many popular neighborhoods, such as Church Hill, are still named after the seven.
+                        Which is not an original RVA seven hill?</p>
+                </div>
+                <div class="card-body">
+                    <form class="form" id="question-form3">
+                        <div class="answer">
+                            <input name="radio3" type="radio" id="input-radio7" value="Oregon Hill" defaultChecked="false">
+                            <label for="input-radio7" 7 class="answer-option">Oregon Hill</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio3" type="radio" id="input-radio8" value="Union Hill" defaultChecked="false">
+                            <label for="input-radio8" class="answer-option">Union Hill</label>
+                        </div>
+                        <div class="answer">
+                            <input name="radio3" type="radio" id="input-radio9" value="Gambles Hill" defaultChecked="false">
+                            <label for="input-radio9" class="answer-option">Gambles Hill</label>
+                        </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container" id="i3-container">
+            <div class="card" id="info3">
+                <div class="card-header">
+                    <h1 class="display-4" id="wrong-correct3"></h1>
+                    <hr class="my-4 bg-light">
+                    <p class="lead" id="more-info">There are actually more than the official "seven hills" of RVA: Navy Hill, Council Chamber Hill, French Garden Hill, Shockoe Hill (the remaining four of seven original) plus Oregon Hill, Fulton Hill, Libby Hill, Chimboranzo Hill, Forest Hill, Westover Hill and Powhatan Hill).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container" id="q4-container">
+                <div class="card" id="question4">
+                    <img class="card-img-top" src="http://richmondmagazine.com/downloads/17570/download/Postcard_Monument_Avenue_Aerial.jpg?cb=c5d1f9d47dd6056cd5c01d98c298581e">
+                    <div class="card-header">
+                        <h1 class="display-4">Question Four:</h1>
+                        <hr class="my-4 bg-light">
+                        <p class="lead">Which RVA Street is the <i>ONLY</i> street in the country to be designated a National Historic Landmark?</p>
+                    </div>
+                    <div class="card-body">
+                        <form class="form" id="question-form4">
+                            <div class="answer">
+                                <input name="radio4" type="radio" id="input-radio10" value="Cary Street" defaultChecked="false">
+                                <label for="input-radio10" 7 class="answer-option">Cary Street</label>
+                            </div>
+                            <div class="answer">
+                                <input name="radio4" type="radio" id="input-radio11" value="Monument Avenue" defaultChecked="false">
+                                <label for="input-radio11" class="answer-option">Monument Avenue</label>
+                            </div>
+                            <div class="answer">
+                                <input name="radio4" type="radio" id="input-radio12" value="Franklin Street" defaultChecked="false">
+                                <label for="input-radio12" class="answer-option">Franklin Street</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="info-container" id="i4-container">
+                <div class="card" id="info4">
+                    <div class="card-header">
+                        <h1 class="display-4" id="wrong-correct4"></h1>
+                        <hr class="my-4 bg-light">
+                        <p class="lead" id="more-info">Due to Monument Avenue statue's Confederate solider majority content, the street remains a controversy and could see some changes in the near future to add correct context to the statues, as well as rumors that staues could be removed or added to give a complete history of the diverse area.</p>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
