@@ -1,4 +1,4 @@
-    var time = 40;
+    var time = 120;
     var intervalId;
     var gameStart = false;
     var answer1 = "";
@@ -7,14 +7,12 @@
     var answer4 = "";
     
     document.getElementById("counter").style.visibility = "hidden";
-
     
     $("#start-button").on('click', timerRun);
             
     gameStart = true;
 
     function timerRun() {
-        clearInterval(intervalId);
         interval = setInterval(countdown, 1000);
     }
         
@@ -23,17 +21,15 @@
         document.getElementById("counter").style.visibility = "visible";
         document.getElementById("start-button").style.visibility = "hidden";
         document.getElementById("time-text").style.visibility = "hidden";
-        $("#counter").html("<p>" + "You have " + "<strong>" + time + "</strong>" + " seconds remaining!" + "</p>");   
+        $("#counter").html("<p>" + "You have " + "<strong>" + time + "</strong>" + " seconds remaining!" + "</p>");
         if (time === 0) {
             countdownStop();
             alert("Your time is up! Refresh page to play again.")
-            $("#counter").html("<p>" + "Game over... Your time is up!" + "</p>");
+            document.getElementById("counter").style.visibility = "hidden";
+            document.getElementById("start-button").style.visibility = "visible";
+            document.getElementById("time-text").style.visibility = "visible";
             $("input[type=radio]").prop('disabled', true);
         }
-    }
-
-    function countdownStop() {
-        clearInterval(intervalId);
     }
 
     $(':radio[name="radio1"]').change(function () {
@@ -89,12 +85,25 @@
             $("#q4-container").hide();
             $("#i4-container").show();
         } else {
-            $("#wrong-correct4").html("<h1>" + "Wrong! The answer is Monument." + "</h1>");
+            $("#wrong-correct4").html("<h1>" + "Wrong! The answer is Monument Avenue." + "</h1>");
             $("#q4-container").hide();
             $("#i4-container").show();
         }
     })
     console.log(answer4);
+
+    function countdownStop() {
+        clearInterval(intervalId);
+        time = 120;
+    }
+    timerrun();
+    
+
+    
+
+    
+    
+
 
              
     
